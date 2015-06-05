@@ -14,9 +14,7 @@ public class Main {
                 new Rectangle(6, 7)
         };
 
-        RectangleAverager rectangleAverager = new RectangleAverager();
-
-        float average = rectangleAverager.averageArea(rectangles);
+        float average = new RectangleAverager().averageArea(rectangles);
 
         System.out.println(average);
     }
