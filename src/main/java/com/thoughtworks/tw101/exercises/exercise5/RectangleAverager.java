@@ -6,9 +6,9 @@ public class RectangleAverager {
     public float averageArea(Rectangle[] rectangles) {
 
         for (int i = 0; i < rectangles.length; i++ ) {
-            sumOfAreas = sumOfAreas + rectangles[i].area();
+            sumOfAreas += rectangles[i].area();
         }
-        System.out.println("Sum of all areas: " + sumOfAreas+ " number of recs: " + rectangles.length);
+        System.out.printf("\nSum of all areas: %.1f, number of recs %d", sumOfAreas, rectangles.length);
         return sumOfAreas / rectangles.length;
     }
 }
